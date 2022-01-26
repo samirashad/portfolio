@@ -32,7 +32,7 @@ p {
 }
 
 .heading {
-  margin: 90px auto 10px;
+  margin: 50px auto 10px;
   background: #f9f7fe;
 }
 
@@ -74,7 +74,31 @@ a.new-html {
   background: #f9f7fe;
   padding: 20px;
 }
+nav {
+  padding: 40px 10px 10px;
+}
 
+nav li {
+  list-style: none;
+  display: inline;
+  margin-left: 20px;
+}
+nav a {
+  text-decoration: none;
+  color: black;
+}
+nav a:hover,
+nav a.active {
+  color: var(--link-color);
+  font-weight: bold;
+}
+.logo {
+  max-width: 150px;
+}
+nav ul {
+  padding: 0;
+  margin: auto 0;
+}
 @media (max-width: 992px) {
   .heading {
     text-align: center;
@@ -108,5 +132,8 @@ a.new-html {
   .content {
     padding-right: 40px;
     padding-left: 40px;
+  }
+  .logo {
+    display: none;
   }
 }
